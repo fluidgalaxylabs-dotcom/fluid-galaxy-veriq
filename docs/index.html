@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VERIQ – Gizlilik Politikası | Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #000000;
+      --surface: #121214;
+      --surface-variant: #1b1b1f;
+      --border: #2a2a30;
+      --text: #f3f4f6;
+      --muted: #b0b4be;
+      --accent: #cfd6e3;
+      --link: #9cc2ff;
+      --btn-active-bg: #2b2f38;
+      --btn-active-border: #6b768c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 28px 16px 56px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header, .policy-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px 24px;
+      margin-bottom: 16px;
+    }
+    .top-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .brand-title {
+      margin: 0;
+      font-size: 1.7rem;
+      letter-spacing: -0.01em;
+    }
+    .lang-switcher {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface-variant);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px;
+    }
+    .lang-btn {
+      appearance: none;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      cursor: pointer;
+      transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .lang-btn:hover {
+      color: var(--text);
+    }
+    .lang-btn[aria-pressed="true"] {
+      background: var(--btn-active-bg);
+      border-color: var(--btn-active-border);
+      color: var(--text);
+    }
+    .lang-sep {
+      color: var(--border);
+      user-select: none;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .meta-item {
+      background: var(--surface-variant);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 0.92rem;
+    }
+    .meta-label {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.3rem;
+      color: var(--accent);
+    }
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 1.04rem;
+      color: var(--text);
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+    ul {
+      margin: 6px 0 12px;
+      padding-left: 20px;
+    }
+    li + li {
+      margin-top: 6px;
+    }
+    strong {
+      color: var(--text);
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background: var(--surface-variant);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.88em;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .is-hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="top-bar">
+        <h1 class="brand-title" id="header-title">VERIQ – Gizlilik Politikası</h1>
+        <nav class="lang-switcher" aria-label="Language switcher / Dil seçici">
+          <button type="button" class="lang-btn" id="btn-tr" aria-pressed="true" onclick="setLanguage('tr')">Türkçe</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" id="btn-en" aria-pressed="false" onclick="setLanguage('en')">English</button>
+        </nav>
+      </div>
+      <p id="header-subtitle">VERIQ Android uygulamasının gerçek kaynak kodu davranışı incelenerek hazırlanmış resmi gizlilik politikası.</p>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <span class="meta-label" id="meta-app-label">Uygulama ve Kimlik</span>
+          <strong>VERIQ</strong> (<code>com.fluidgalaxy.codeflow</code>)
+        </div>
+        <div class="meta-item">
+          <span class="meta-label" id="meta-dev-label">Geliştirici / Şirket</span>
+          <strong>Fluid Galaxy Labs</strong>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label" id="meta-email-label">Resmi İletişim ve Destek</span>
+          <a href="mailto:fluidgalaxylabs@gmail.com">fluidgalaxylabs@gmail.com</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- TURKCE BOLUM (VARSAYILAN) -->
+    <section id="content-tr" class="policy-card" lang="tr">
+      <h2>VERIQ – Gizlilik Politikası</h2>
+
+      <h3>1. Uygulama ve Geliştirici Bilgisi</h3>
+      <ul>
+        <li><strong>Uygulama Adı:</strong> VERIQ</li>
+        <li><strong>Uygulama Kimliği (<code>applicationId</code>):</strong> <code>com.fluidgalaxy.codeflow</code></li>
+        <li><strong>Geliştirici / Şirket:</strong> Fluid Galaxy Labs</li>
+        <li><strong>Resmi İletişim ve Destek E-postası:</strong> <a href="mailto:fluidgalaxylabs@gmail.com">fluidgalaxylabs@gmail.com</a></li>
+        <li><strong>Sürüm:</strong> <code>1.0</code> (<code>versionCode: 1</code>)</li>
+      </ul>
+
+      <h3>2. Bildirim Erişimi ve OTP Algılama</h3>
+      <p>VERIQ, <code>OtpNotificationListenerService</code> üzerinden Android sistem <strong>Bildirim Erişimi (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>)</strong> yetkisiyle yalnızca kullanıcının yetkilendirdiği bildirimlere erişir. <strong>Bildirim erişimi izni verilmeden uygulamanın OTP algılama özelliği çalışmaz.</strong></p>
+      <ul>
+        <li><strong>Desteklenen Kaynaklar (<code>SourceRegistry</code>):</strong> SMS/mesajlaşma uygulamaları (Google Messages, Samsung Messages vb.), WhatsApp (<code>com.whatsapp</code>, <code>com.whatsapp.w4b</code>) ve desteklenen e-posta uygulamaları (Gmail, Outlook, Samsung Email vb.). Sosyal medya, oyun ve diğer desteklenmeyen uygulamaların bildirimleri taranmadan atlanır.</li>
+        <li><strong>Yalnızca Cihaz Üzerinde İşleme (<code>OtpParser</code>):</strong> Desteklenen bildirimlerin başlık (<code>EXTRA_TITLE</code>) ve metin alanları (<code>EXTRA_TEXT</code>, <code>EXTRA_BIG_TEXT</code>) yalnızca doğrulama kodu (OTP) ayrıştırmak amacıyla cihaz belleğinde (RAM) anlık olarak işlenir.</li>
+        <li><strong>OTP Dışındaki İçeriklerin Korunması:</strong> Bildirim gövdeleri, telefon numaraları, e-posta adresleri veya OTP dışındaki kişisel metinler hiçbir veritabanına veya kalıcı dosyaya kaydedilmez, başka amaçla kullanılmaz ve hiçbir sunucuya gönderilmez.</li>
+        <li><strong>Kaynak Mesaj Bütünlüğü:</strong> VERIQ kaynak uygulamalardaki (SMS, WhatsApp, Gmail, Outlook vb.) mesajların kendisini <strong>silmez, dışarı göndermez veya içeriğini değiştirmez</strong>.</li>
+        <li><strong>İsteğe Bağlı Otomatik Okundu İşaretleme (<code>NotificationMarkAsReadHelper</code>):</strong> Ayarlar ekranındaki <strong>Otomatik Okundu İşaretle</strong> (<code>auto_mark_as_read</code>) tercihi <strong>varsayılan olarak kapalıdır</strong>. Yalnızca kullanıcı bu ayarı manuel olarak açarsa ve algılanan OTP panoya başarıyla kopyalanırsa, kaynak bildirimde açıkça güvenli <code>Okundu</code> / <code>Mark as read</code> <code>PendingIntent</code> aksiyonu kontrol edilir ve yalnızca bir kez tetiklenir. Yanıtla (<code>Reply</code>), Arşivle (<code>Archive</code>), Sil (<code>Delete</code>) veya Okunmadı (<code>Unread</code>) aksiyonları kesinlikle çalıştırılmaz; takip anahtarları yalnızca RAM içi 128 kapasiteli kümede tutulur.</li>
+        <li><strong>VERIQ Bildirim İşlemleri (<code>CopyOtpReceiver</code>):</strong> VERIQ bildirimlerindeki <strong>Bildirimi Kapat</strong> yalnızca ilgili VERIQ bildirimini kapatır; <strong>Kopyala</strong> yalnızca o bildirime ait OTP kodunu tekrar panoya yazar. İkisi de kaynak uygulamalara veya VERIQ OTP geçmişine dokunmaz.</li>
+      </ul>
+
+      <h3>3. Pano (Clipboard) Kullanımı</h3>
+      <ul>
+        <li><strong>Panoya Yazma (<code>OtpClipboardHelper</code>):</strong> Algılanan OTP kodu <strong>Otomatik Kopyalama</strong> (<code>auto_copy</code>) ayarı açıksa veya kullanıcı Ana Sayfa'daki / VERIQ bildirimindeki <strong>Kopyala</strong> butonuna dokunursa <code>ClipboardManager.setPrimaryClip</code> ile panoya yazılır.</li>
+        <li><strong>Otomatik Pano Temizleme ve Pano Verilerinin Korunması:</strong> Kullanıcının seçtiği süre dolduğunda (<code>30 Saniye</code>, <code>1 Dakika</code>, <code>5 Dakika</code>; <code>Kapalı</code> seçeneğinde zamanlayıcı çalışmaz) VERIQ, kullanıcının bu sürede panoya kopyaladığı başka kişisel verileri yanlışlıkla silmemek için bellek içi eşitlik kontrolü amacıyla <code>ClipboardManager.primaryClip</code> değerini okuyup son kopyalanan OTP koduyla karşılaştırır. Panoda farklı bir içerik varsa panoya hiç dokunulmaz; okunan diğer kullanıcı verileri asla incelenmez, saklanmaz, loglanmaz veya sunucuya gönderilmez. Yalnızca panoda hâlâ aynı OTP kodu duruyorsa pano boşaltılır (<code>""</code>).</li>
+        <li><strong>Android Sistem Davranışları:</strong> Android 10+ sürümlerinde uygulama arka plandayken sistem pano erişimini kısıtlayabilir; Android 12+ (API 31+) sürümlerinde ise sistem pano erişimi sırasında ekranda sistem pano bildirimi gösterebilir. VERIQ kısıtlama durumlarında çökmeden hatayı güvenle yoksayar.</li>
+      </ul>
+
+      <h3>4. OTP Geçmişi ve Yerel Depolama</h3>
+      <p>VERIQ tüm kalıcı tercihlerini ve yerel kayıtlarını <strong>Android Jetpack Preferences DataStore</strong> (<code>otp_clipboard_settings.preferences_pb</code>) içinde yalnızca kullanıcının kendi cihazındaki uygulama özel depolama alanında tutar:</p>
+      <ul>
+        <li><strong>OTP Geçmişi (<code>otp_history_entries</code>):</strong> Güvenlik gerekçesiyle yalnızca algılama zaman damgasını (<code>timestampMs</code>), kaynak kategorisini (<code>SMS</code>, <code>WHATSAPP</code>, <code>EMAIL</code>) ve işlem durumunu (<code>COPIED</code>, <code>AUTO_PASTED</code>, <code>DETECTED</code>) saklar (en fazla <code>200</code> kayıt; saklama süresi <code>1 Gün</code>, <code>7 Gün</code>, <code>30 Gün</code> veya <code>Süresiz</code>). <strong>OTP geçmişinde gerçek doğrulama kodları veya mesaj içerikleri saklanmaz.</strong></li>
+        <li><strong>Son Algılanan OTP (<code>last_otp_code</code>, <code>last_otp_source</code>, <code>last_otp_timestamp</code>):</strong> Ana Sayfa kartında görüntüleme ve manuel yeniden kopyalama için yerel DataStore'da tutulur; kullanıcı Ana Sayfa'daki <strong>Temizle</strong> butonuna dokunduğunda silinir.</li>
+        <li><strong>Kullanıcı Tercihleri:</strong> <code>auto_copy</code>, <code>show_notification</code>, <code>vibration</code>, <code>auto_mark_as_read</code>, <code>clear_timeout</code>, <code>sms_enabled</code>, <code>whatsapp_enabled</code>, <code>email_enabled</code>, <code>daily_count</code>, <code>last_count_day</code>, <code>history_retention_days</code>, <code>has_seen_disclaimer</code> ve <code>has_accepted_notification_disclosure</code> yalnızca cihaz içinde tutulur.</li>
+        <li><strong>Sunucuya Aktarım Yokluğu:</strong> DataStore'da tutulan hiçbir OTP geçmişi kaydı, ayar veya yerel veri hiçbir sunucuya ya da üçüncü tarafa gönderilmez.</li>
+        <li><strong>Bulut Yedekleme ve Aktarım Engeli:</strong> <code>android:allowBackup="false"</code>, <code>backup_rules.xml</code> ve <code>data_extraction_rules.xml</code> ile Cloud Backup ve Device-to-Device Transfer tamamen kapatılmıştır.</li>
+        <li><strong>Verilerin Silinmesi:</strong> Ana Sayfa &gt; <strong>Temizle</strong> son kodu sıfırlar; Geçmiş &gt; <strong>Tüm Geçmişi Temizle</strong> geçmişi siler; Android Sistem Ayarları üzerinden <strong>Uygulama Verilerini Temizle</strong> veya <strong>uygulama kaldırma</strong> tüm yerel DataStore verilerini kalıcı olarak siler.</li>
+      </ul>
+
+      <h3>5. GitHub Üzerinden Uzaktan Sürüm Kontrolü</h3>
+      <p>VERIQ <code>AndroidManifest.xml</code> dosyasında yalnızca uzaktan minimum sürüm doğrulaması amacıyla <code>android.permission.INTERNET</code> ve <code>android.permission.ACCESS_NETWORK_STATE</code> izinlerini kullanır (<code>AppVersionChecker.kt</code>):</p>
+      <ul>
+        <li>Açılışta ve arka plandan ön plana dönüşlerde (<code>ON_RESUME</code>) <code>ConnectivityManager</code> ile bağlantı kontrol edilir ve şu resmi adrese önbelleksiz HTTPS <code>GET</code> isteği atılır: <code>https://raw.githubusercontent.com/fluidgalaxylabs-dotcom/fluid-galaxy-veriq/main/docs/version.json</code></li>
+        <li>Sunucudan yalnızca <code>{"minimumVersionCode": &lt;sayı&gt;}</code> okunup uygulamanın yüklü <code>versionCode</code> değeriyle bellekte karşılaştırılır.</li>
+        <li>Bu istekte <strong>hiçbir kullanıcı verisi, bildirim metni, OTP kodu, cihaz kimliği veya analitik verisi gönderilmez</strong>; yanıt DataStore'a kaydedilmez.</li>
+      </ul>
+
+      <h3>6. Üçüncü Taraf Kütüphaneler ve SDK'lar</h3>
+      <p><code>gradle/libs.versions.toml</code> ve <code>app/build.gradle.kts</code> incelemesine göre projede yalnızca Kotlin ve resmi Android Jetpack kütüphaneleri (<code>Core KTX</code>, <code>Lifecycle</code>, <code>Activity Compose</code>, <code>Compose / Material3</code>, <code>DataStore Preferences</code>) kullanılmaktadır. <strong>Üçüncü taraf reklam, analitik, telemetri veya hata izleme (crash reporting) SDK'sı bulunmamaktadır.</strong></p>
+
+      <h3>7. İzin Yönetimi ve İletişim</h3>
+      <p>Kullanıcı dilediği zaman <strong>İzin Merkezi</strong>, <strong>Ayarlar</strong> veya Android Sistem Ayarları üzerinden Bildirim Erişimi, Bildirim Gösterme (<code>POST_NOTIFICATIONS</code>) ve isteğe bağlı Pil Optimizasyonu ayarlarını yönetebilir.</p>
+      <ul>
+        <li><strong>Geliştirici / Şirket:</strong> Fluid Galaxy Labs</li>
+        <li><strong>Resmi İletişim ve Destek E-postası:</strong> <a href="mailto:fluidgalaxylabs@gmail.com">fluidgalaxylabs@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <!-- ENGLISH SECTION -->
+    <section id="content-en" class="policy-card is-hidden" lang="en">
+      <h2>VERIQ – Privacy Policy</h2>
+
+      <h3>1. Application and Developer Information</h3>
+      <ul>
+        <li><strong>Application Name:</strong> VERIQ</li>
+        <li><strong>Application ID (<code>applicationId</code>):</strong> <code>com.fluidgalaxy.codeflow</code></li>
+        <li><strong>Developer / Company:</strong> Fluid Galaxy Labs</li>
+        <li><strong>Official Contact and Support Email:</strong> <a href="mailto:fluidgalaxylabs@gmail.com">fluidgalaxylabs@gmail.com</a></li>
+        <li><strong>Version:</strong> <code>1.0</code> (<code>versionCode: 1</code>)</li>
+      </ul>
+
+      <h3>2. Notification Access and OTP Detection</h3>
+      <p>VERIQ accesses only user-authorized notifications through Android <strong>Notification Access (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>)</strong> via <code>OtpNotificationListenerService</code>. <strong>Without Notification Access permission, VERIQ's notification-based OTP detection cannot function.</strong></p>
+      <ul>
+        <li><strong>Supported Sources (<code>SourceRegistry</code>):</strong> SMS/messaging apps (Google Messages, Samsung Messages, etc.), WhatsApp (<code>com.whatsapp</code>, <code>com.whatsapp.w4b</code>), and supported email apps (Gmail, Outlook, Samsung Email, etc.). Notifications from social media, games, and other unsupported apps are skipped without scanning.</li>
+        <li><strong>Strictly On-Device Processing (<code>OtpParser</code>):</strong> Notification titles (<code>EXTRA_TITLE</code>) and text fields (<code>EXTRA_TEXT</code>, <code>EXTRA_BIG_TEXT</code>) of supported apps are processed transiently in device memory (RAM) solely to extract verification codes (OTP).</li>
+        <li><strong>Protection of Non-OTP Content:</strong> Notification bodies, phone numbers, email addresses, and non-OTP personal messages are never saved to any database or persistent file, used for any other purpose, or sent to any external server.</li>
+        <li><strong>Source Message Integrity:</strong> VERIQ does <strong>not delete, forward, or modify</strong> the original messages in source apps (SMS, WhatsApp, Gmail, Outlook, etc.).</li>
+        <li><strong>Optional Auto Mark as Read (<code>NotificationMarkAsReadHelper</code>):</strong> The <strong>Otomatik Okundu İşaretle</strong> (<code>auto_mark_as_read</code>) setting is <strong>disabled by default</strong>. Only when manually enabled by the user—and only after an OTP is detected and copied to the clipboard—does VERIQ inspect notification actions for an explicit, safe <code>Okundu</code> / <code>Mark as read</code> <code>PendingIntent</code> and invoke it once. Actions such as Reply, Archive, Delete, or Unread are strictly rejected; volatile tracking keys stay in RAM (<code>128</code> max capacity).</li>
+        <li><strong>VERIQ Notification Actions (<code>CopyOtpReceiver</code>):</strong> On VERIQ's own OTP notification, <strong>Bildirimi Kapat</strong> cancels only that VERIQ notification, and <strong>Kopyala</strong> copies only that notification's OTP code again. Neither alters source app notifications or OTP history.</li>
+      </ul>
+
+      <h3>3. Clipboard Usage</h3>
+      <ul>
+        <li><strong>Writing to Clipboard (<code>OtpClipboardHelper</code>):</strong> Detected OTP codes are written to the clipboard via <code>ClipboardManager.setPrimaryClip</code> when <strong>Auto Copy</strong> (<code>auto_copy</code>) is enabled or when the user taps <strong>Kopyala</strong> on the Home screen or VERIQ notification.</li>
+        <li><strong>Auto-Clear Protection and Other Clipboard Data:</strong> When the configured timeout expires (<code>30s</code>, <code>1m</code>, <code>5m</code>; inactive when set to <code>Off</code>), VERIQ compares <code>ClipboardManager.primaryClip</code> in memory strictly for equality against the last copied OTP code (<code>currentClipboardText == code</code>) so unrelated user-copied content is never erased. If different data is on the clipboard, VERIQ leaves it untouched; other clipboard data is never inspected, stored, logged, or sent externally. Only when the same OTP code remains is the clipboard cleared (<code>""</code>).</li>
+        <li><strong>Android System Behavior:</strong> Background clipboard restrictions on Android 10+ and system clipboard access alerts on Android 12+ (API 31+) may apply depending on OS version; VERIQ catches restrictions safely without crashing.</li>
+      </ul>
+
+      <h3>4. OTP History and Local Storage</h3>
+      <p>VERIQ stores all persistent preferences and local records strictly on the user's device inside <strong>Android Jetpack Preferences DataStore</strong> (<code>otp_clipboard_settings.preferences_pb</code>):</p>
+      <ul>
+        <li><strong>OTP History (<code>otp_history_entries</code>):</strong> For security, stores only the timestamp (<code>timestampMs</code>), source category (<code>SMS</code>, <code>WHATSAPP</code>, <code>EMAIL</code>), and status (<code>COPIED</code>, <code>AUTO_PASTED</code>, <code>DETECTED</code>), capped at <code>200</code> entries and pruned per retention settings (<code>1 Day</code>, <code>7 Days</code>, <code>30 Days</code>, or <code>Unlimited</code>). <strong>Actual verification codes and message contents are never saved in OTP history.</strong></li>
+        <li><strong>Last Detected OTP (<code>last_otp_code</code>, <code>last_otp_source</code>, <code>last_otp_timestamp</code>):</strong> Stored locally in DataStore solely to display and re-copy the latest code on the Home card; cleared immediately when tapping <strong>Temizle</strong>.</li>
+        <li><strong>User Preferences:</strong> <code>auto_copy</code>, <code>show_notification</code>, <code>vibration</code>, <code>auto_mark_as_read</code>, <code>clear_timeout</code>, <code>sms_enabled</code>, <code>whatsapp_enabled</code>, <code>email_enabled</code>, <code>daily_count</code>, <code>last_count_day</code>, <code>history_retention_days</code>, <code>has_seen_disclaimer</code>, and <code>has_accepted_notification_disclosure</code> remain strictly local.</li>
+        <li><strong>No Server Transmission:</strong> As verified in source code, none of the OTP history records, preferences, or local DataStore files are ever sent to any server or third party.</li>
+        <li><strong>Backups &amp; Transfer Disabled:</strong> <code>android:allowBackup="false"</code>, <code>backup_rules.xml</code>, and <code>data_extraction_rules.xml</code> disable Cloud Backup and Device-to-Device Transfer.</li>
+        <li><strong>Data Deletion:</strong> Home &gt; <strong>Temizle</strong> resets the last code; History &gt; <strong>Tüm Geçmişi Temizle</strong> deletes all history; Android System Settings ("Clear storage") or uninstalling VERIQ permanently removes all local DataStore data.</li>
+      </ul>
+
+      <h3>5. Remote Minimum Version Check via GitHub</h3>
+      <p>VERIQ declares <code>android.permission.INTERNET</code> and <code>android.permission.ACCESS_NETWORK_STATE</code> in <code>AndroidManifest.xml</code> solely for fail-closed minimum version verification (<code>AppVersionChecker.kt</code>):</p>
+      <ul>
+        <li>At startup and on foreground resume (<code>ON_RESUME</code>), VERIQ checks network availability via <code>ConnectivityManager</code> and sends an uncached HTTPS <code>GET</code> request to: <code>https://raw.githubusercontent.com/fluidgalaxylabs-dotcom/fluid-galaxy-veriq/main/docs/version.json</code></li>
+        <li>Only <code>{"minimumVersionCode": &lt;integer&gt;}</code> is parsed and compared in memory against the installed app <code>versionCode</code>.</li>
+        <li><strong>No user data, notification text, OTP code, device identifier, or analytics payload is transmitted</strong>, and the response is never persisted to DataStore.</li>
+      </ul>
+
+      <h3>6. Third-Party Libraries and SDKs</h3>
+      <p>Per <code>gradle/libs.versions.toml</code> and <code>app/build.gradle.kts</code>, VERIQ uses only Kotlin and official Android Jetpack libraries (<code>Core KTX</code>, <code>Lifecycle</code>, <code>Activity Compose</code>, <code>Compose / Material3</code>, <code>DataStore Preferences</code>). <strong>No advertising, analytics, telemetry, or crash-reporting SDK is included.</strong></p>
+
+      <h3>7. Permission Controls &amp; Contact</h3>
+      <p>Users can manage Notification Access, Post Notifications (<code>POST_NOTIFICATIONS</code>), and optional Battery Optimization settings anytime via VERIQ or Android System Settings.</p>
+      <ul>
+        <li><strong>Developer / Company:</strong> Fluid Galaxy Labs</li>
+        <li><strong>Official Contact and Support Email:</strong> <a href="mailto:fluidgalaxylabs@gmail.com">fluidgalaxylabs@gmail.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var copy = {
+        tr: {
+          title: "VERIQ – Gizlilik Politikası",
+          subtitle: "VERIQ Android uygulamasının gerçek kaynak kodu davranışı incelenerek hazırlanmış resmi gizlilik politikası.",
+          appLabel: "Uygulama ve Kimlik",
+          devLabel: "Geliştirici / Şirket",
+          emailLabel: "Resmi İletişim ve Destek"
+        },
+        en: {
+          title: "VERIQ – Privacy Policy",
+          subtitle: "Official privacy policy verified directly against the actual source code behavior of VERIQ.",
+          appLabel: "Application & ID",
+          devLabel: "Developer / Company",
+          emailLabel: "Official Contact & Support"
+        }
+      };
+
+      window.setLanguage = function (lang) {
+        var isEn = lang === "en";
+        var trSection = document.getElementById("content-tr");
+        var enSection = document.getElementById("content-en");
+        var btnTr = document.getElementById("btn-tr");
+        var btnEn = document.getElementById("btn-en");
+        var strings = isEn ? copy.en : copy.tr;
+
+        trSection.classList.toggle("is-hidden", isEn);
+        enSection.classList.toggle("is-hidden", !isEn);
+        btnTr.setAttribute("aria-pressed", String(!isEn));
+        btnEn.setAttribute("aria-pressed", String(isEn));
+        document.documentElement.lang = isEn ? "en" : "tr";
+
+        document.getElementById("header-title").textContent = strings.title;
+        document.getElementById("header-subtitle").textContent = strings.subtitle;
+        document.getElementById("meta-app-label").textContent = strings.appLabel;
+        document.getElementById("meta-dev-label").textContent = strings.devLabel;
+        document.getElementById("meta-email-label").textContent = strings.emailLabel;
+      };
+    })();
+  </script>
+</body>
+</html>
